@@ -22,6 +22,7 @@ platform :ios do
     scan(
       workspace: "CICDSample.xcworkspace",
       devices: ["iPhone 11"],
+      scheme: "CICDSample-REC",
       open_report: false,
       code_coverage: true, # important for slather !
       skip_build: false,
@@ -30,8 +31,29 @@ platform :ios do
     # Linting
     swiftlint(
       raise_if_swiftlint_error: true,
-			output_file: "fastlane/reports/swiftlint.txt",
+			output_file: "reports/swiftlint.txt",
 			ignore_exit_status: true,
 			config_file: ".swiftlint.yml")
+    # Coverage
+    slather(
+      use_bundle_exec: true,
+      sonarqube_xml: true,
+      cobertura_xml: true,
+      teamcity: true,
+      scheme: "CICDSample-REC",
+      output_directory: "reports/",
+      proj: "CICDSample.xcodeproj",
+      workspace: "CICDSample.xcworkspace",
+      ignore: ["Pods/\*\*"]
+      )
+    # Rename File
+    sh("cd .. && mv reports/cobertura.xml reports/coverage-swift.xml")
+    # Complexity
+    lizard(
+  		source_folder: "CXPMobile",
+  		language: "swift",
+  		export_type: "xml",
+  		report_file: "reports/lizard-report.xml")
+    sonar
   end
 end
