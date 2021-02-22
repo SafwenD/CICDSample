@@ -5,37 +5,12 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000517">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000463">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: scan" time="50.422452">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="2: swiftlint" time="0.482765">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="3: slather" time="5.303798">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="4: cd .. &amp;&amp; mv reports/cobertura.xml reports/coverage-swift.xml" time="0.009399">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="5: lizard" time="0.500706">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="6: sonar" time="6.3077">
+      <testcase classname="fastlane.lanes" name="1: sonar" time="11.417497">
         
       </testcase>
     

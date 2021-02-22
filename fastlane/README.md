@@ -21,6 +21,11 @@ or alternatively using `brew install fastlane`
 fastlane ios sanity_check
 ```
 Description of what the lane does
+### ios sos
+```
+fastlane ios sos
+```
+
 
 ----
 

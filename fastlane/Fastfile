@@ -56,4 +56,8 @@ platform :ios do
   		report_file: "reports/lizard-report.xml")
     sonar
   end
+
+  lane :sos do
+    sonar
+  end
 end
