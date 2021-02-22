@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='CICDSampleUITests.xctest' tests='4' failures='0'>
+  <testsuite name='CICDSampleTests.CICDSampleTests' tests='2' failures='0'>
+    <testcase classname='CICDSampleTests.CICDSampleTests' name='testExample' time='0.002'/>
+    <testcase classname='CICDSampleTests.CICDSampleTests' name='testPerformanceExample' time='0.361'/>
+  </testsuite>
+  <testsuite name='CICDSampleUITests.CICDSampleUITests' tests='2' failures='0'>
+    <testcase classname='CICDSampleUITests.CICDSampleUITests' name='testExample' time='1.640'/>
+    <testcase classname='CICDSampleUITests.CICDSampleUITests' name='testLaunchPerformance' time='15.291'/>
+  </testsuite>
+</testsuites>
